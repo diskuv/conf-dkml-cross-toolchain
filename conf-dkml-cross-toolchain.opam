@@ -14,7 +14,7 @@ depends: [
 ]
 build: [
   [
-    "sh"
+    "bash"
     "toolchain/findlib-configure.sh"
     "%{_:build}%/dl/findlib-1.9.1.tar.gz"
     "1.9.1"
@@ -28,7 +28,7 @@ build: [
 install: [
   [ "install" "-d" "%{lib}%/findlib.conf.d" ]
   [
-    "sh"
+    "bash"
     "toolchain/findlib-install.sh"
     "%{_:build}%/extra-findlib"
     "%{ocaml:native}%"
@@ -36,7 +36,7 @@ install: [
     "%{dkml-base-compiler:share}%/mlcross"  { dkml-base-compiler:installed }
   ]
   [
-    "sh"
+    "bash"
     "toolchain/add-findlib-conf.sh"
     "%{prefix}%"
     "%{ocaml-system:path}%/../opt/mlcross"  { ocaml-system:installed }
