@@ -7,7 +7,6 @@ license: "Apache-2.0"
 homepage: "https://github.com/diskuv/dkml-compiler"
 bug-reports: "https://github.com/diskuv/dkml-compiler/issues"
 depends: [
-  "ocamlfind"           {>= "1.9.1"}
   "ocaml"               {= "4.12.1"}
   "ocaml-system"        {>= "4.12.1~" & < "4.12.2~"} |
   "dkml-base-compiler"  {>= "4.12.1~" & < "4.12.2~"}
